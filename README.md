@@ -1,6 +1,6 @@
 # processguardium
 2019.11.6
-有个bug等待修复
+有个bug等待修复：莫名其妙退出
 
 这个bug不小
 
