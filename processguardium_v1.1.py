@@ -50,7 +50,7 @@ def main():
     while True:
         for key, name in enumerate(nameList):  # 期待运行的进程
             if not is_running(name):
-                os.popen(processList[key] + ' ' + argList[key])
+                os.popen(f'{processList[key]} {argList[key]}')
                 with open(r'log.txt', 'a+', encoding='utf-8') as f:
                     f.write(str(datetime.now()) + ' 进程 %s 未启动，正在强制启动\n' % name)
         time.sleep(1)
